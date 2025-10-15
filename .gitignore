@@ -1,0 +1,7 @@
+.env
+poetry.lock
+uv.lock
+tg/__pycache__
+tg/routers/__pycache__
+__pycache__
+.python-version
