@@ -1,5 +1,4 @@
 """Import modules"""
-import asyncio
 import os
 import sys
 import logging
@@ -9,6 +8,7 @@ from pydantic import SecretStr
 from loguru import logger
 
 class InterceptHandler(logging.Handler):
+    """Intercept Handler for loguru and aiogram"""
     def emit(self, record):
         level = logger.level(record.levelname).name
         logger.log(level, record.getMessage())
